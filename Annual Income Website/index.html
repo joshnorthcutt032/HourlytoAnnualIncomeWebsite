@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<style>
+h1{
+  text-shadow: 2px 1px black;
+}
+body {
+background-color: #99ccff ;
+color: white;
+font-family: Arial;
+text-shadow: 2px white;
+ }
+ #p {
+   font = 14;
+ }
+hr {
+  border: 0;
+  height: 0; /* Firefox... */
+  box-shadow: 0 0 10px 1px black;
+}
+ button {
+   position: absolute;
+   top: 146px;
+   left: 373px;
+   color: white;
+   background-color: #99ccff;
+   border-radius: 50px;
+   border: 2px solid white; /* Green */
+
+ }
+ button:hover {
+     background-color: white; /* Green */
+     color: #99ccff;
+
+ }
+
+}
+</style>
+<head>
+  <h1> Yearly Income Calculator </h1>
+  <hr/>
+</head>
+<body>
+  <h2> Enter the information below to calculate your annual income </h2>
+ <script>
+   function myFunction() {
+    var a = document.getElementById("txt1").value;
+    var x = parseFloat(a) * 40 * 52;
+    var d = document.getElementById("demo").innerHTML = x;
+  }
+  </script>
+
+  <p>
+
+   <label for="txt1">What is your hourly wage?</label>
+   <input type="text" id="txt1" name="text1">
+
+</p>
+<p>
+
+  <button onclick="myFunction()">Enter</button>
+</p>
+  <p> This is your annual income: </p>
+  <p   id="demo"> </p>
+
+
+
+
+</html>
